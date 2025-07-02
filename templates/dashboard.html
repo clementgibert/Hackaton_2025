@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Tableau de bord</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <h2>Bienvenue {{ username }} 👋</h2>
-    <p>Vous êtes connecté avec succès !</p>
-    <a href="{{ url_for('logout') }}">Se déconnecter</a>
-</body>
-</html>
+<h1>Bienvenue {{ session.username }} ({{ role }})</h1>
+<form method="POST">
+    <label>ID d'examen:</label>
+    <input type="text" name="exam_id" required>
+    <button type="submit">Rechercher</button>
+</form>
+<br>
+<a href="{{ url_for('logout') }}">Déconnexion</a>

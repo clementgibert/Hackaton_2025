@@ -2,27 +2,47 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Inscription</title>
+    <title>Inscription Admin</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .flash-danger {
+            color: red;
+        }
+        .flash-success {
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    <h2>Inscription</h2>
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul class="flash">
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+    <h1>Inscription administrateur</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="{% if category == 'danger' %}flash-danger{% else %}flash-success{% endif %}">
+                        {{ message }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
     {% endwith %}
+
     <form method="POST">
-        <label>Nom d'utilisateur :</label>
-        <input type="text" name="username" required>
-        <label>Mot de passe :</label>
-        <input type="password" name="password" required>
+        <label for="username">Nom d'utilisateur :</label><br>
+        <input id="username" type="text" name="username" required><br><br>
+
+        <label for="password">Mot de passe :</label><br>
+        <input id="password" type="password" name="password" required><br><br>
+
+        <input type="hidden" name="role" value="admin">
+
+        <label for="admin_code">Code Admin :</label><br>
+        <input id="admin_code" type="text" name="admin_code" required placeholder="Code secret admin"><br><br>
+
         <button type="submit">S'inscrire</button>
     </form>
-    <p>Déjà inscrit ? <a href="{{ url_for('login') }}">Se connecter</a></p>
+
+    <p><a href="{{ url_for('login') }}">Se connecter</a></p>
 </body>
 </html>
