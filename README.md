@@ -351,12 +351,12 @@ pyinstaller --onefile --console antitriche.py
 
 ## 📄 Licence
 
-Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence ESTIAM HACKATHON. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ```
 MIT License
 
-Copyright (c) 2025 [Votre Nom]
+Copyright (c) 2025 EQUIPE-2 DEV TEAM
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
