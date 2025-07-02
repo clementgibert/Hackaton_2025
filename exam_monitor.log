@@ -1,0 +1,21 @@
+2025-07-02 14:30:02,787 - INFO - Examen démarré pour Clement (ID: 01)
+2025-07-02 14:30:03,228 - WARNING - PROCESSUS_INTERDIT: Processus interdit détecté: code.exe
+2025-07-02 14:30:03,957 - WARNING - SITE_INTERDIT: Site interdit détecté: google dans 'inscription - google chrome'
+2025-07-02 14:30:30,887 - INFO - Examen terminé
+2025-07-02 14:30:37,486 - INFO - Examen démarré pour Clement (ID: 02)
+2025-07-02 14:30:37,585 - WARNING - PROCESSUS_INTERDIT: Processus interdit détecté: code.exe
+2025-07-02 14:30:37,721 - WARNING - SITE_INTERDIT: Site interdit détecté: google dans 'inscription - google chrome'
+2025-07-02 14:30:52,895 - WARNING - SITE_INTERDIT: Site interdit détecté: google dans 'clementgibert/hackaton_2025 - google chrome'
+2025-07-02 14:31:00,259 - INFO - Examen terminé
+2025-07-02 14:31:53,331 - INFO - Examen démarré pour clement (ID: 01)
+2025-07-02 14:31:53,651 - WARNING - PROCESSUS_INTERDIT: Processus interdit détecté: code.exe
+2025-07-02 14:33:20,916 - INFO - Examen démarré pour clement (ID: 01)
+2025-07-02 14:33:36,896 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-02 14:33:52,090 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - recherche google - google chrome'
+2025-07-02 14:34:22,301 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - recherche google - google chrome'
+2025-07-02 14:34:27,426 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-02 14:35:36,485 - INFO - Examen terminé
+2025-07-02 14:42:46,718 - INFO - Examen démarré pour ty (ID: 4)
+2025-07-02 14:43:02,657 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-02 14:43:32,865 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-02 14:47:41,639 - INFO - Examen terminé

@@ -1,0 +1,58 @@
+{
+  "student_name": "Clement",
+  "exam_id": "01",
+  "start_time": "2025-07-02T14:30:02.693460",
+  "end_time": "2025-07-02T14:30:28.733267",
+  "duration": "0:00:26.039807",
+  "violations": [
+    {
+      "timestamp": "2025-07-02T14:30:02.868735",
+      "type": "PROCESSUS_INTERDIT",
+      "description": "Processus interdit détecté: code.exe",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250702_143002_PROCESSUS_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-02T14:30:03.810185",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: google dans 'inscription - google chrome'",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250702_143003_SITE_INTERDIT.png"
+    }
+  ],
+  "total_violations": 2,
+  "config": {
+    "forbidden_keywords": [
+      "chatgpt",
+      "google",
+      "stackoverflow",
+      "discord",
+      "whatsapp",
+      "facebook",
+      "youtube",
+      "instagram",
+      "gmail",
+      "outlook",
+      "claude",
+      "bard",
+      "copilot",
+      "github"
+    ],
+    "forbidden_processes": [
+      "discord.exe",
+      "whatsapp.exe",
+      "telegram.exe",
+      "slack.exe",
+      "teams.exe",
+      "zoom.exe",
+      "notepad++.exe",
+      "code.exe"
+    ],
+    "check_interval": 5,
+    "screenshot_on_violation": true,
+    "block_clipboard": true,
+    "monitor_usb": true
+  }
+}

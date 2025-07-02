@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen {{ exam_id }}</title>
+</head>
+<body>
+    <h1>Étudiants ayant participé à l'examen {{ exam_id }}</h1>
+    <ul>
+        {% for report in reports %}
+            <li>
+                <a href="{{ url_for('student_detail', exam_id=exam_id, student_name=report.student_name) }}">
+                    {{ report.student_name }} - {{ report.total_violations }} violation(s)
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">← Retour</a>
+</body>
+</html>

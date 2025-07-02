@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détails - {{ report.student_name }}</title>
+</head>
+<body>
+    <h1>Étudiant : {{ report.student_name }}</h1>
+    <p><strong>Examen ID:</strong> {{ report.exam_id }}</p>
+    <p><strong>Début:</strong> {{ report.start_time }}</p>
+    <p><strong>Durée:</strong> {{ report.duration }}</p>
+    <p><strong>Total de violations:</strong> {{ report.total_violations }}</p>
+
+    <h2>Violations</h2>
+    {% if report.violations %}
+        <ul>
+        {% for v in report.violations %}
+            <li>
+                [{{ v.timestamp }}] {{ v.type }} - {{ v.description }}
+                {% if v.screenshot %}
+                    <br><img src="/{{ v.screenshot }}" alt="screenshot" width="300">
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucune violation détectée.</p>
+    {% endif %}
+    
+    <a href="{{ url_for('exam', exam_id=report.exam_id) }}">← Retour à la liste</a>
+</body>
+</html>

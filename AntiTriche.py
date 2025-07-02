@@ -54,13 +54,13 @@ class ExamMonitor:
         # Configuration de surveillance
         self.config = {
             "forbidden_keywords": [
-                "chatgpt", "google", "stackoverflow", "discord", "whatsapp",
+                "chatgpt", "stackoverflow", "discord", "whatsapp",
                 "facebook", "youtube", "instagram", "gmail", "outlook",
                 "claude", "bard", "copilot", "github"
             ],
             "forbidden_processes": [
                 "discord.exe", "whatsapp.exe", "telegram.exe", "slack.exe",
-                "teams.exe", "zoom.exe", "notepad++.exe", "code.exe"
+                "teams.exe", "zoom.exe", "notepad++.exe"
             ],
             "check_interval": 5,  # secondes
             "screenshot_on_violation": True,

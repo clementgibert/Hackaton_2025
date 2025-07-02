@@ -1,0 +1,56 @@
+{
+  "student_name": "ty",
+  "exam_id": "4",
+  "start_time": "2025-07-02T14:42:46.626576",
+  "end_time": "2025-07-02T14:47:40.283469",
+  "duration": "0:04:53.656893",
+  "violations": [
+    {
+      "timestamp": "2025-07-02T14:43:02.414020",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: chatgpt dans 'chatgpt - google chrome'",
+      "student": "ty",
+      "exam_id": "4",
+      "screenshot": "screenshots/4_20250702_144302_SITE_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-02T14:43:32.720893",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: chatgpt dans 'chatgpt - google chrome'",
+      "student": "ty",
+      "exam_id": "4",
+      "screenshot": "screenshots/4_20250702_144332_SITE_INTERDIT.png"
+    }
+  ],
+  "total_violations": 2,
+  "config": {
+    "forbidden_keywords": [
+      "chatgpt",
+      "stackoverflow",
+      "discord",
+      "whatsapp",
+      "facebook",
+      "youtube",
+      "instagram",
+      "gmail",
+      "outlook",
+      "claude",
+      "bard",
+      "copilot",
+      "github"
+    ],
+    "forbidden_processes": [
+      "discord.exe",
+      "whatsapp.exe",
+      "telegram.exe",
+      "slack.exe",
+      "teams.exe",
+      "zoom.exe",
+      "notepad++.exe"
+    ],
+    "check_interval": 5,
+    "screenshot_on_violation": true,
+    "block_clipboard": true,
+    "monitor_usb": true
+  }
+}
