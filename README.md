@@ -380,7 +380,7 @@ in the Software without restriction...
 
 - **🐛 Issues**: [GitHub Issues](https://github.com/votre-username/antitriche/issues)
 - **💬 Discussions**: [GitHub Discussions](https://github.com/votre-username/antitriche/discussions)
-- **📧 Email**: votre.email@domain.com
+- **📧 Email**: elyess.boudabous@estiam.com
 - **📖 Wiki**: [Documentation complète](https://github.com/votre-username/antitriche/wiki)
 
 ### 🔗 Liens Utiles
