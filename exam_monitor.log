@@ -19,3 +19,7 @@
 2025-07-02 14:43:02,657 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
 2025-07-02 14:43:32,865 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
 2025-07-02 14:47:41,639 - INFO - Examen terminé
+2025-07-03 09:36:04,996 - INFO - Examen démarré pour Emilien (ID: 01)
+2025-07-03 09:36:26,867 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 09:36:52,264 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-03 09:37:06,482 - INFO - Examen terminé

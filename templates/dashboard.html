@@ -1,8 +1,263 @@
-<h1>Bienvenue {{ session.username }} ({{ role }})</h1>
-<form method="POST">
-    <label>ID d'examen:</label>
-    <input type="text" name="exam_id" required>
-    <button type="submit">Rechercher</button>
-</form>
-<br>
-<a href="{{ url_for('logout') }}">Déconnexion</a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .welcome-title {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .user-info {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .role-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-left: 10px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .search-section {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .search-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .search-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        label {
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"] {
+            padding: 15px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
+
+        input[type="text"]:hover {
+            border-color: #b8c6f7;
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            align-self: center;
+            min-width: 200px;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .search-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .actions {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .logout-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .logout-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Animation d'apparition */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 30px 20px;
+            }
+            
+            .welcome-title {
+                font-size: 1.8rem;
+            }
+            
+            .search-form {
+                gap: 20px;
+            }
+            
+            .search-btn {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-title {
+                font-size: 1.5rem;
+            }
+            
+            .role-badge {
+                display: block;
+                margin: 10px auto 0;
+                width: fit-content;
+            }
+            
+            .user-info {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Effet de particules en arrière-plan */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(102,126,234,0.1)"/><circle cx="80" cy="30" r="1" fill="rgba(118,75,162,0.1)"/><circle cx="40" cy="70" r="1" fill="rgba(102,126,234,0.1)"/><circle cx="90" cy="80" r="1" fill="rgba(118,75,162,0.1)"/></svg>');
+            pointer-events: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="welcome-title">
+                Bienvenue <span class="user-info">{{ session.username }}</span>
+                <span class="role-badge">{{ role }}</span>
+            </h1>
+        </div>
+        
+        <div class="search-section">
+            <h2 class="search-title">Rechercher un examen</h2>
+            <form method="POST" class="search-form">
+                <div class="form-group">
+                    <label for="exam_id">ID d'examen:</label>
+                    <input type="text" id="exam_id" name="exam_id" required placeholder="Entrez l'ID de l'examen">
+                </div>
+                <button type="submit" class="search-btn">Rechercher</button>
+            </form>
+        </div>
+        
+        <div class="actions">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Déconnexion</a>
+        </div>
+    </div>
+</body>
+</html>
