@@ -23,3 +23,9 @@
 2025-07-03 09:36:26,867 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
 2025-07-03 09:36:52,264 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
 2025-07-03 09:37:06,482 - INFO - Examen terminé
+2025-07-03 12:09:35,871 - INFO - Examen démarré pour fr (ID: 01)
+2025-07-03 12:10:48,407 - INFO - Examen terminé
+2025-07-03 12:11:03,639 - INFO - Examen démarré pour fr (ID: 01)
+2025-07-03 12:11:04,515 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-03 12:11:14,661 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 12:12:06,589 - INFO - Examen terminé

@@ -1,0 +1,68 @@
+{
+  "student_name": "fr",
+  "exam_id": "01",
+  "start_time": "2025-07-03T12:09:35.752416",
+  "end_time": "2025-07-03T12:10:47.416378",
+  "duration": "0:01:11.663962",
+  "violations": [
+    {
+      "timestamp": "2025-07-03T12:09:46.405831",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: claude dans 'claude - recherche google - google chrome'",
+      "student": "fr",
+      "exam_id": "01"
+    },
+    {
+      "timestamp": "2025-07-03T12:09:51.416663",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: claude dans 'claude - google chrome'",
+      "student": "fr",
+      "exam_id": "01"
+    },
+    {
+      "timestamp": "2025-07-03T12:10:11.463195",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: chatgpt dans 'chatgpt - google chrome'",
+      "student": "fr",
+      "exam_id": "01"
+    },
+    {
+      "timestamp": "2025-07-03T12:10:41.526766",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: chatgpt dans 'chatgpt - google chrome'",
+      "student": "fr",
+      "exam_id": "01"
+    }
+  ],
+  "total_violations": 4,
+  "config": {
+    "forbidden_keywords": [
+      "chatgpt",
+      "stackoverflow",
+      "discord",
+      "whatsapp",
+      "facebook",
+      "youtube",
+      "instagram",
+      "gmail",
+      "outlook",
+      "claude",
+      "bard",
+      "copilot",
+      "github"
+    ],
+    "forbidden_processes": [
+      "discord.exe",
+      "whatsapp.exe",
+      "telegram.exe",
+      "slack.exe",
+      "teams.exe",
+      "zoom.exe",
+      "notepad++.exe"
+    ],
+    "check_interval": 5,
+    "screenshot_on_violation": true,
+    "block_clipboard": true,
+    "monitor_usb": true
+  }
+}
