@@ -26,6 +26,8 @@ import win32clipboard
 import subprocess
 import winreg
 from PIL import Image, ImageTk
+from database_logger import insert_alert
+
 
 # Configuration des logs
 logging.basicConfig(
@@ -368,6 +370,17 @@ class ExamMonitor:
         self.show_violation_alert(violation_type, description)
         self.log_event("VIOLATION", f"{violation_type}: {description}")
         self.update_stats()
+
+# ✅ Enregistrement dans la base Snowflake
+try:
+    insert_alert(
+        student_id=self.student_name,
+        site=violation_type,
+        url=description
+    )
+except Exception as e:
+    self.log_event("ERROR", f"Insertion BDD échouée: {str(e)}")
+
 
     def take_screenshot(self, violation_type):
         """Prendre une capture d'écran"""
