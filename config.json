@@ -1,0 +1,29 @@
+{
+  "forbidden_keywords": [
+    "chatgpt",
+    "stackoverflow",
+    "discord",
+    "whatsapp",
+    "facebook",
+    "youtube",
+    "instagram",
+    "gmail",
+    "outlook",
+    "claude",
+    "bard",
+    "copilot"
+  ],
+  "forbidden_processes": [
+    "discord.exe",
+    "whatsapp.exe",
+    "telegram.exe",
+    "slack.exe",
+    "teams.exe",
+    "zoom.exe",
+    "notepad++.exe"
+  ],
+  "check_interval": 5,
+  "screenshot_on_violation": true,
+  "block_clipboard": true,
+  "monitor_usb": true
+}

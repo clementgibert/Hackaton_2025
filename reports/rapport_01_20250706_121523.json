@@ -1,0 +1,71 @@
+{
+  "student_name": "clement",
+  "exam_id": "01",
+  "start_time": "2025-07-06T12:13:38.986102",
+  "end_time": "2025-07-06T12:15:23.027874",
+  "duration": "0:01:44.039835",
+  "violations": [
+    {
+      "timestamp": "2025-07-06T12:14:01.201102",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: claude dans 'claude - google chrome'",
+      "student": "clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250706_121401_SITE_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-06T12:14:22.013483",
+      "type": "PROCESSUS_INTERDIT",
+      "description": "Processus interdit détecté: discord.exe",
+      "student": "clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250706_121422_PROCESSUS_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-06T12:14:52.475402",
+      "type": "PROCESSUS_INTERDIT",
+      "description": "Processus interdit détecté: discord.exe",
+      "student": "clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250706_121452_PROCESSUS_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-06T12:15:22.948296",
+      "type": "PROCESSUS_INTERDIT",
+      "description": "Processus interdit détecté: discord.exe",
+      "student": "clement",
+      "exam_id": "01"
+    }
+  ],
+  "total_violations": 4,
+  "config": {
+    "forbidden_keywords": [
+      "chatgpt",
+      "stackoverflow",
+      "discord",
+      "whatsapp",
+      "facebook",
+      "youtube",
+      "instagram",
+      "gmail",
+      "outlook",
+      "claude",
+      "bard",
+      "copilot",
+      "github"
+    ],
+    "forbidden_processes": [
+      "discord.exe",
+      "whatsapp.exe",
+      "telegram.exe",
+      "slack.exe",
+      "teams.exe",
+      "zoom.exe",
+      "notepad++.exe"
+    ],
+    "check_interval": 5,
+    "screenshot_on_violation": true,
+    "block_clipboard": true,
+    "monitor_usb": true
+  }
+}

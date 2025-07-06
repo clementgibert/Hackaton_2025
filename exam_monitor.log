@@ -29,3 +29,27 @@
 2025-07-03 12:11:04,515 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
 2025-07-03 12:11:14,661 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
 2025-07-03 12:12:06,589 - INFO - Examen terminé
+2025-07-03 12:19:51,645 - INFO - Examen démarré pour Clement (ID: 01)
+2025-07-03 12:20:07,623 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 12:20:27,818 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-03 12:20:58,055 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-03 12:21:53,296 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 12:22:23,596 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 12:22:32,832 - INFO - Examen terminé
+2025-07-03 12:29:30,154 - INFO - Examen démarré pour monsieur dupon (ID: 01)
+2025-07-03 12:29:31,026 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 12:30:01,259 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-03 12:31:13,109 - INFO - Examen terminé
+2025-07-03 14:54:10,634 - INFO - Examen démarré pour Clement (ID: 6)
+2025-07-03 14:54:27,583 - WARNING - SITE_INTERDIT: Site interdit détecté: chatgpt dans 'chatgpt - google chrome'
+2025-07-03 14:54:37,934 - WARNING - COPIER_COLLER: Utilisation du presse-papiers détectée
+2025-07-03 14:54:59,513 - INFO - Examen terminé
+2025-07-03 14:55:18,594 - INFO - Configuration mise à jour
+2025-07-03 14:55:32,138 - INFO - Examen démarré pour Khalil (ID: 6)
+2025-07-03 14:55:43,764 - INFO - Examen terminé
+2025-07-06 12:13:39,086 - INFO - Examen démarré pour clement (ID: 01)
+2025-07-06 12:14:01,923 - WARNING - SITE_INTERDIT: Site interdit détecté: claude dans 'claude - google chrome'
+2025-07-06 12:14:22,341 - WARNING - PROCESSUS_INTERDIT: Processus interdit détecté: discord.exe
+2025-07-06 12:14:52,767 - WARNING - PROCESSUS_INTERDIT: Processus interdit détecté: discord.exe
+2025-07-06 12:15:23,289 - WARNING - PROCESSUS_INTERDIT: Processus interdit détecté: discord.exe
+2025-07-06 12:15:25,023 - INFO - Examen terminé

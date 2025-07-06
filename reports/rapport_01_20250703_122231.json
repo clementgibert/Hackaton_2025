@@ -1,0 +1,80 @@
+{
+  "student_name": "Clement",
+  "exam_id": "01",
+  "start_time": "2025-07-03T12:19:51.545761",
+  "end_time": "2025-07-03T12:22:31.900104",
+  "duration": "0:02:40.354343",
+  "violations": [
+    {
+      "timestamp": "2025-07-03T12:20:07.359120",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: claude dans 'claude - google chrome'",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250703_122007_SITE_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-03T12:20:27.664851",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: chatgpt dans 'chatgpt - google chrome'",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250703_122027_SITE_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-03T12:20:57.905107",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: chatgpt dans 'chatgpt - google chrome'",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250703_122057_SITE_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-03T12:21:53.170787",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: claude dans 'claude - google chrome'",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250703_122153_SITE_INTERDIT.png"
+    },
+    {
+      "timestamp": "2025-07-03T12:22:23.400609",
+      "type": "SITE_INTERDIT",
+      "description": "Site interdit détecté: claude dans 'claude - google chrome'",
+      "student": "Clement",
+      "exam_id": "01",
+      "screenshot": "screenshots/01_20250703_122223_SITE_INTERDIT.png"
+    }
+  ],
+  "total_violations": 5,
+  "config": {
+    "forbidden_keywords": [
+      "chatgpt",
+      "stackoverflow",
+      "discord",
+      "whatsapp",
+      "facebook",
+      "youtube",
+      "instagram",
+      "gmail",
+      "outlook",
+      "claude",
+      "bard",
+      "copilot",
+      "github"
+    ],
+    "forbidden_processes": [
+      "discord.exe",
+      "whatsapp.exe",
+      "telegram.exe",
+      "slack.exe",
+      "teams.exe",
+      "zoom.exe",
+      "notepad++.exe"
+    ],
+    "check_interval": 5,
+    "screenshot_on_violation": true,
+    "block_clipboard": true,
+    "monitor_usb": true
+  }
+}
