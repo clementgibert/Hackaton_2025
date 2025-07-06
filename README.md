@@ -61,7 +61,7 @@ python antitriche.py
 │  Configuration de l'Examen                                  │
 │  ┌─────────────────┐ ┌─────────────────────────────────────┐ │
 │  │ Nom étudiant:   │ │ Jean Dupont                         │ │
-│  │ ID examen:      │ │ EXAM_2025_001                       │ │
+│  │ ID examen:      │ │ 01                       │ │
 │  └─────────────────┘ └─────────────────────────────────────┘ │
 │                                                             │
 │  [Démarrer l'Examen] [Arrêter l'Examen] [Configuration]    │
@@ -191,7 +191,7 @@ antitriche/
 ```json
 {
   "student_name": "Jean Dupont",
-  "exam_id": "EXAM_2025_001",
+  "exam_id": "01",
   "start_time": "2025-07-02T14:30:25.123456",
   "end_time": "2025-07-02T16:45:30.789012",
   "duration": "2:15:05",
@@ -201,7 +201,7 @@ antitriche/
       "timestamp": "2025-07-02T15:22:10.456789",
       "type": "SITE_INTERDIT",
       "description": "Site interdit détecté: google dans 'Google - Recherche'",
-      "screenshot": "screenshots/EXAM001_20250702_152210_SITE_INTERDIT.png"
+      "screenshot": "screenshots/01_20250702_152210_SITE_INTERDIT.png"
     }
   ],
   "config": { /* Configuration utilisée */ }
