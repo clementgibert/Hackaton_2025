@@ -81,6 +81,13 @@ python antitriche.py
 
 ---
 
+### Se rendre sur le site externe
+
+```bash
+# Installation simple
+python app.py
+```
+Rien de plus simple, une fois cela fait, créer votre propre compte admin en utilisant le code 478!, puis une fois cela fait, vous n'autre plus qu'à entrer l'ID l'examen pour voir tous les étudiants qui ont trouché (biensûr cela reste un aperçu du site, les fonctionalité changeront et seront simplifié au fur et à mesure)
 ## 🚀 Installation Rapide
 
 ### Prérequis
